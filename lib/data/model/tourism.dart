@@ -31,4 +31,17 @@ class Tourism {
     required this.like,
     required this.image,
   });
+
+  Map<String, dynamic> toJson() {
+    return <String, dynamic>{
+      "id": id,
+      "name": name,
+      "description": description,
+      "address": address,
+      "longitude": longitude,
+      "latitude": latitude,
+      "like": like,
+      "image": image,
+    };
+  }
 }
